@@ -1,0 +1,31 @@
+footer {
+  background-color: black;
+  color: white;
+}
+
+ul {
+  list-style: none;
+}
+
+footer a {
+  color: white !important;
+  font-family: 'Montserrat', sans-serif !important;
+  text-transform: uppercase;
+  font-weight: bolder;
+}
+
+.row {
+  flex-wrap: wrap;
+}
+
+.btn-danger {
+  background-color: var(--maroon-text);
+}
+
+.copyright{
+  color: var(--background)
+}
+
+.centerimg img {
+  max-width: 150px;
+}

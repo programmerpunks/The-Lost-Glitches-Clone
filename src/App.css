@@ -1,0 +1,110 @@
+@font-face {
+  font-family: 'Montserrat';
+  src: url('../public/fonts/Montserrat/static/Montserrat-ExtraBold.ttf');
+}
+
+@font-face {
+
+  font-family: 'Raleway';
+  src: url('../public/fonts/Raleway/static/Raleway-ExtraBold.ttf');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'Raleway-Light';
+  src: url('../public/fonts/Raleway/static/Raleway-Light.ttf');
+  font-weight: normal;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+body {
+  --background: #F5EFE7;
+  --dark: rgb(23, 23, 27);
+  --maroon-text: #c33d3a;
+  --time-anim: 4s;
+  --delay-anim: 2s;
+
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+.dark-btn {
+  background-color: var(--dark);
+  color: white;
+  border-radius: 5rem;
+  width: 60%;
+  font-family: 'Raleway', sans-serif;
+}
+
+.dark-btn:hover {
+  color: var(--maroon-text);
+}
+
+main::before {
+  content: "";
+  position: fixed;
+  border-left: 1px solid #08121a;
+  height: 100vh;
+  margin-left: 5%;
+  z-index: 0;
+}
+
+.w-65 {
+  width: 65%;
+}
+
+.w-80 {
+  width: 80%;
+}
+
+.w-85 {
+  width: 85%;
+}
+
+
+.ps-7 {
+  padding-left: 10vh !important;
+}
+
+.mt-7 {
+  margin-top: 10vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2,
+h4,
+h5 {
+  font-family: 'Montserrat';
+}
+
+h4 {
+  color: var(--background);
+  font-size: 4.3vh;
+}
+
+.btn {
+  font-family: 'Montserrat', sans-serif !important;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}

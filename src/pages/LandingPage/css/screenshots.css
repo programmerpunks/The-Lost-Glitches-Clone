@@ -1,0 +1,11 @@
+.darkbox {
+  background-color: black;
+}
+
+.darkbox h2 {
+  color: var(--background);
+  font-family: 'Montserrat';
+  text-transform: uppercase;
+  font-size: 35px;
+  
+}

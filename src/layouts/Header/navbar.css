@@ -1,0 +1,51 @@
+.bg-dark {
+  background-color: var(--dark) !important;
+}
+
+.navbar-brand {
+  margin-left: 19px;
+  margin-top: -10px;
+  text-align: center;
+}
+
+.navbar-brand img {
+  width: 55% !important;
+  padding: 0% !important;
+}
+
+
+li a {
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+  padding: 0;
+  letter-spacing: .1em;
+  text-decoration: none;
+  cursor: pointer;
+  transition: 0.1s ease !important;
+
+}
+
+li a:hover {
+  color: var(--maroon-text) !important;
+}
+
+.btn-dark {
+  font-family: "Raleway", sans-serif;
+  background-color: transparent !important;
+  border-color: white !important;
+  border-radius: 2rem !important;
+  font-size: 15px;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+
+.btn-dark:hover {
+  color: var(--maroon-text) !important;
+  border-color: var(--maroon-text) !important;
+}
+
+@media only screen and (max-width: 576px) {
+  .navbar-brand {
+    margin-left: -2vh !important;
+  }
+}

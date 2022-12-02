@@ -1,0 +1,59 @@
+.video-container {
+  width: 100vw;
+  margin-top: 5vw;
+  height: calc(100vh - 150px);
+  background-color: antiquewhite;
+}
+
+.content {
+  position: relative;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  opacity: 1;
+  transform: translate(0px, 0px);
+}
+
+.bg-video {
+  width: inherit;
+  height: inherit;
+}
+
+.bg-video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+}
+
+.trailer-button {
+  position: absolute;
+  bottom: 100px;
+  left: 50%;
+  transform: translate(-50%, 0px);
+}
+
+.trailer-button .btn-primary {
+  font-family: "Montserrat", sans-serif;
+  border-radius: 50px !important;
+  background-color: var(--dark);
+  /* background-color: antiquewhite; */
+  color: var(--maroon-text);
+  border: none;
+  font-size: 20px;
+  font-weight: bolder;
+}
+
+.trailer-button .btn-primary:hover {
+  background-color: rgb(250, 249, 249);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+
+  .btn-primary {
+    font-size: 17px !important;
+  }
+}
