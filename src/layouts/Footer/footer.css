@@ -22,10 +22,45 @@ footer a {
   background-color: var(--maroon-text);
 }
 
-.copyright{
+.copyright {
   color: var(--background)
 }
 
 .centerimg img {
   max-width: 150px;
+}
+
+.menu-footer-right>.nav-item {
+  width: 20% !important;
+  /* position: absolute; */
+  /* display: inline-block !important; */
+  white-space: nowrap;
+  background-color: rgb(152, 75, 75) !important;
+}
+
+.menu-footer-center {
+  width: 60% !important;
+  background-color: aqua;
+
+}
+
+.menu-footer-left>.nav-item {
+  /* width: 20% !important; */
+  white-space: nowrap;
+  background-color: rgb(152, 75, 75) !important;
+
+}
+
+@media only screen and (max-width: 900px) {
+  .menu-footer-left>.nav-item {
+    width: 100% !important;
+    display: inline-block !important;
+    background-color: rgb(193, 19, 19) !important;
+  }
+
+  .menu-footer-right>.nav-item {
+    width: 100% !important;
+    display: inline-block !important;
+    background-color: rgb(193, 19, 19) !important;
+  }
 }

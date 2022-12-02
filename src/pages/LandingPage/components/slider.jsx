@@ -9,14 +9,14 @@ import { slidesData } from '../../../dummyText/slidesdata';
 function SampleNextArrow({ currentSlide, slideCount, ...props }) {
 
   return (
-    <IoIosArrowForward size={30} color='#c33d3a' className='slider-button' {...props} style={{ backgroundColor: '#F5EFE7', width: 30, height: 30, borderRadius: 2 }} />
+    <IoIosArrowForward size={30} color='#c33d3a' className='slider-button' {...props} style={{ backgroundColor: '#F5EFE7', width: 30, height: 30, borderRadius: 2, marginRight: 15 }} />
 
   );
 }
 
 function SamplePrevArrow(props) {
   return (
-    <IoIosArrowBack size={30} color='#c33d3a' className='slider-button' {...props} style={{ backgroundColor: '#F5EFE7', width: 30, height: 30, borderRadius: 2 }} />
+    <IoIosArrowBack size={30} color='#c33d3a' className='slider-button' {...props} style={{ backgroundColor: '#F5EFE7', width: 30, height: 30, borderRadius: 2, marginLeft: 20 }} />
 
   );
 }
@@ -78,15 +78,17 @@ export const GallerySlider = () => {
         <div className="title outline marquee ms-4 mb-5">
           <div className="outlined-text text-uppercase" id="outline-text">Choose your play style</div>
         </div>
-        <Slider {...settings} className='px-5'>
+        <Slider {...settings} className='px-5 ps-3'>
 
           {slidesData.map((item, index) => (
             <>
               <div className='col-md-8 col-sm-6 container'>
-                <img src={item.img} alt='' className='img-fluid w-65 slider-img' />
+                <div className='d-flex justify-content-center'>
+                  <img src={item.img} alt='' className='img-fluid w-70 slider-img' />
+                </div>
 
-                <div class="d-flex slider-animated-arrow mt-3">
-                  <h4 className='fs-5'>{item.title}</h4>
+                <div class="d-flex slider-animated-arrow mt-3 justify-content-center align-items-center">
+                  <h4 className='text-center'>{item.title}</h4>
                   <div className='d-flex animated-content'>
                     <p class="text">more info</p>
                     <IoIosArrowForward size={12} className='ms-1 mt-1' color='#c33d3a' />
@@ -105,3 +107,5 @@ export const GallerySlider = () => {
     </section>
   );
 }
+
+

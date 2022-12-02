@@ -56,6 +56,39 @@
   visibility: hidden;
 }
 
+.slider-animated-arrow h4 {
+  font-size: 20px;
+}
+
 .slider-animated-arrow:hover h4 {
   color: #c33d3a !important;
+}
+
+
+
+@media only screen and (max-width: 420px) {
+  .slider-animated-arrow {
+    margin-left: -1vh;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .slider-animated-arrow {
+    margin-left: 0.5vh;
+  }
+
+  .slider-animated-arrow h4 {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 1500px) {
+  .slider-animated-arrow {
+    margin-left: 0vh;
+  }
+
+  .slider-animated-arrow h4 {
+    padding: 0;
+    font-size: 18px;
+  }
 }

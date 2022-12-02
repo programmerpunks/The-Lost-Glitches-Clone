@@ -6,9 +6,9 @@ export const Footer = () => {
   return (
     <footer className="content-info">
       <div className="container p-5">
-        <div className="row">
-          <div className="col-md-3 col-sm-12 text-center">
-            <ul>
+        <div className="row d-flex">
+          <div className="col-lg-3 text-center mt-4">
+            <ul className=''>
               <li className="active nav-item">
                 <Link className="nav-link" to="https://playlostglitches.com/" aria-current="page">Home</Link>
               </li>
@@ -49,8 +49,8 @@ export const Footer = () => {
             </div>
           </div>
 
-          <div className="col-md-3 col-sm-12 text-center">
-            <ul id="menu-footer-right" className="menu">
+          <div className="col-lg-3 col-sm-12 text-center mt-4">
+            <ul className="menu-footer-righ menu">
               <li className="nav-item menu-item menu-join-our-server"><Link className="nav-link" to="https://discord.com/invite/thelostglitches">Join our server</Link></li>
               <li className="nav-item menu-item menu-privacy-policy"><Link className="nav-link" to="https://playlostglitches.com/privacy-policy/">Privacy Policy</Link></li>
               <li className="nav-item menu-item menu-comic"><Link className="nav-link" to="https://playlostglitches.com/comic/">Comic</Link></li>
